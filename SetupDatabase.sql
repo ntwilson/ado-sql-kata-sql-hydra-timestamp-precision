@@ -1,0 +1,15 @@
+CREATE DATABASE TimestampPrecision
+GO
+USE TimestampPrecision;
+
+CREATE TABLE [TestTable]  (
+  TimeCol [DATETIME2](7) NOT NULL,
+  CONSTRAINT [PK_TestTable] PRIMARY KEY (
+    TimeCol
+  )
+)
+
+GO
+
+INSERT INTO [TestTable] VALUES ('2022-07-20 15:05:45.1234567')
+INSERT INTO [TestTable] VALUES ('2022-07-20 15:05:45.2345678')

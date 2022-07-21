@@ -1,0 +1,10 @@
+[general]
+connection = "Server=your_server;Database=TimestampPrecision;Trusted_Connection=True;TrustServerCertificate=True"
+output = "TimestampPrecisionDB.fs"
+namespace = "TestTimestamps.TimestampPrecisionDB"
+cli_mutable = false
+[readers]
+reader_type = "Microsoft.Data.SqlClient.SqlDataReader"
+[filters]
+include = []
+exclude = []
